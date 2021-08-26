@@ -8,8 +8,8 @@ See [Contribute 👀](#contribute) for guideline.
 
 ### Menu
 
-- Horizontal menu
-- Vertical menu
+- Horizontal
+- Vertical
 
 ### Cursor
 
