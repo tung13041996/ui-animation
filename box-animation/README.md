@@ -1,33 +1,31 @@
-# UI Animation
+#Vertical Menu Hover Animation
 
-🎏 A collection of motion for UI elements to enhance interactivity on our website.
+##Introduce
+This plugin will show you animation for vertical menu: when you hover items on vertical menu, 1 box move to that item alternately from an item you setted up before
 
-See [Contribute 👀](#contribute) for guideline.
+##Structure
 
-## Collections
+###html: 
+Setup html like this structure
+``` CSS
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+```
 
-### Menu
+###Javascript
+This plugin uses Jquery, so you must install jquery CDN before
+add sources code in file script.js to your project.
 
-- Horizontal
-- Vertical
+##Usage
+Some option for you to use this plugin:
 
-### Cursor
-
-- Magnetic button
-
-### Button
-
-### Form input
-
-## Contribute
-
-This is an exclusive repo for ViiVue team only. If you find a **bug** or a better way to **improve** things in this
-repo, or you want to **contribute for the team**, we're very welcome! Here is how (I assumed that you're already granted
-as a member):
-
-1. Fork this repo to your personal account.
-2. Make changes with the forked repo.
-3. Commit and create Pull Request (PR).
-4. The Maintainer of this repo will review and merge your accepted PR(s).
-
-That's it. Happy coding ✌️
+| **Option** | **Description** | **Note** |
+| :--- | :--- | :--- |
+| ul | This element is a list item of vertical menu | with structure HTML like example: ul: "ul" |
+| backgroundColor | string: background color of box move to item | default: backgroundColor: 'skyblue' |
+| currentItemsIndex | number: position of box move to item for the first screen when page loaded| default: currentItemsIndex: 0 |
