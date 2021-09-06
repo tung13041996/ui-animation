@@ -1,13 +1,15 @@
-#Vertical Menu Hover Animation
+# Vertical Menu Hover Animation v1.0
 
-##Introduce
+## Introduce
 This plugin will show you animation for vertical menu: when you hover items on vertical menu, 1 box move to that item alternately from an item you setted up before
 
-##Structure
+See [demo](https://tung13041996.github.io/ui-animation/box-animation/)
 
-###html: 
+## Structure
+
+### html: 
 Setup html like this structure
-``` CSS
+``` HTML
 <ul>
     <li>Item 1</li>
     <li>Item 2</li>
@@ -17,15 +19,24 @@ Setup html like this structure
 </ul>
 ```
 
-###Javascript
+### Javascript
 This plugin uses Jquery, so you must install jquery CDN before
 add sources code in file script.js to your project.
 
-##Usage
+Init plugin in javascript:
+```HTML
+    verticalMenuHoverAnimation({
+        option1: value1,
+        option2: value2,
+        ...
+    });
+```
+
+## Usage
 Some option for you to use this plugin:
 
-| **Option** | **Description** | **Note** |
-| :--- | :--- | :--- |
-| ul | This element is a list item of vertical menu | with structure HTML like example: ul: "ul" |
-| backgroundColor | string: background color of box move to item | default: backgroundColor: 'skyblue' |
-| currentItemsIndex | number: position of box move to item for the first screen when page loaded| default: currentItemsIndex: 0 |
+| **Option** | **Type** | **Default** | **Description** |
+| :--- | :--- | :--- | :---|
+| ul | string | ul: "" | add class which is a list item of vertical menu |
+| backgroundColor | string | backgroundColor: 'skyblue' | background color of box move to item |
+| currentItemsIndex | number | currentItemsIndex: 0 | position of box move to item for the first screen when page loaded |
